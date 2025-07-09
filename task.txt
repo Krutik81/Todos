@@ -1,0 +1,7 @@
+learn for todo
+
+1. nextAuth.js
+2. delete http
+3. push http
+4. next js api folder
+5. backend node js and next js 

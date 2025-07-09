@@ -1,0 +1,6 @@
+Atlas username = krutiksaneparazeronesys
+
+Atlas password = Krutik%402004
+Atlas password = Krutik%402004
+
+Atlas connection string = mongodb+srv://krutiksaneparazeronesys:Krutik%402004@cluster0.scl9xe1.mongodb.net/

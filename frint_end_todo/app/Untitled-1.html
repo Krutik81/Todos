@@ -1,0 +1,39 @@
+                                        {/* Checkbox and title/input */}
+                                        <div className="flex items-center gap-3">
+                                            
+                                            <input
+                                                type="checkbox"
+                                                className="w-4 h-4 text-white bg-blue-700"
+                                                checked={checkboxId.includes(item._id)}
+                                                onChange={() => handle_checkBox(item._id)}
+                                            />
+
+                                            {updateID === item._id ? (
+                                                <>
+                                                    <input
+                                                        type="text"
+                                                        className="border px-2 py-1 rounded-md"
+                                                        // value={item.title || change_input}
+                                                        value={updateId}
+                                                        onChange={(e) => set_handle(e)}
+                                                    />
+                                                    <button className="text-white bg-green-700 text-center p-1 px-2 border rounded-md w-full" onClick={on_Edit_Click}>Edit</button>
+                                                </>
+                                            ) : (
+                                                <p>{item.title}</p>
+                                            )}
+                                        </div>
+
+                                        {/* Edit and delete icons */}
+                                        <div className="flex gap-3">
+                                            <FaEdit
+                                                className="cursor-pointer text-blue-600"
+                                                onClick={() => {
+                                                    set_Update_Id(item._id, item.title)
+                                                }}
+                                            />
+                                            <MdDelete
+                                                className="cursor-pointer text-red-600"
+                                                onClick={() => set_Delete_Id(item._id)}
+                                            />
+                                        </div>
