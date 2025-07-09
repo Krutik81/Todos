@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { useState, useEffect } from "react";
