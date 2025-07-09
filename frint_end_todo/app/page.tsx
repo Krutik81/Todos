@@ -34,7 +34,7 @@ export default function Home() {
             }
             else {
                 const response = await add_Todo_db.json()
-                console.log("🚀 ~ consthabdle_Submit=async ~ response:", response)
+                // console.log("🚀 ~ consthabdle_Submit=async ~ response:", response)
                 setMessage("New Todo are added")
                 setTimeout(() => {
                     setMessage("")
@@ -57,7 +57,7 @@ export default function Home() {
 
                 if (temp_num === 0) {
                     Object.entries(todo_temp).map((key, value) => {
-                        console.log("🚀 ~ Object.entries ~ key:", key)
+                        console.log("🚀 ~ Obje1ct.entries ~ key:", key)
                         if (key[1].completed) {
                             setCheckboxId(prevalue => [...prevalue, key[1]._id])
                             console.log("yes");
